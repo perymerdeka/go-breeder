@@ -2,19 +2,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
+{{ template "header" .}}
+
+<style>
+body {
+    margin-top: 4em;
+}
+</style>
 
 <body>
-{{ template "header" }}
+{{ template "navbar" .}}
 
-{{ block "css" .}}
-
-{{ end }}
 
 {{ block "content" .}}
 
 {{ end }}
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 {{ template "footer" }}
 {{ block "js" .}}
 

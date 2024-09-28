@@ -44,6 +44,7 @@ func (app *application) buildTemplateFromDisk(t string) (*template.Template, err
 		"./templates/base.layout.gohtml",
 		"./templates/partials/header.partial.gohtml",
 		"./templates/partials/footer.partial.gohtml",
+		"./templates/partials/navbar.partial.gohtml",
 		fmt.Sprintf("./templates/%s", t),
 	}
 	tmpl, err := template.ParseFiles(templateSlice...)
